@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="铜运古道非遗文化数字化展示平台——调研报告、口述史、实践纪录片、影像资料库" />
+  <title>铜运古道非遗文化 | 数字化展示平台</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">铜运古道 · 非遗</a>
+      <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false">☰</button>
+      <nav class="nav" id="main-nav">
+        <a href="#home">首页</a>
+        <a href="#reports">调研报告</a>
+        <a href="#oral">口述史</a>
+        <a href="#videos">影像纪实</a>
+        <a href="pages/library.html">影像资料库</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-slider" id="hero-slider" aria-roledescription="轮播" aria-label="首页背景图">
+        <div class="hero-slides" id="hero-slides"></div>
+        <div class="hero-overlay"></div>
+        <button type="button" class="hero-nav hero-prev" id="hero-prev" aria-label="上一张">‹</button>
+        <button type="button" class="hero-nav hero-next" id="hero-next" aria-label="下一张">›</button>
+        <div class="hero-dots" id="hero-dots" role="tablist" aria-label="轮播指示"></div>
+      </div>
+      <div class="hero-ornament" aria-hidden="true">铜</div>
+      <div class="container hero-content">
+        <p class="eyebrow">数字化永久展示平台</p>
+        <h1>铜运古道非遗文化</h1>
+        <p class="lead">整合调研报告、传承人口述、实践纪录片与影像资料库，实现成果的长期在线访问与数据检索，便于地方持续使用与文化馆移交存档。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#reports">查阅调研报告</a>
+          <a class="btn btn-ghost" href="#oral">聆听口述史</a>
+        </div>
+        <ul class="stats">
+          <li><strong>04</strong><span>核心栏目</span></li>
+          <li><strong>PDF</strong><span>报告可下载</span></li>
+          <li><strong>5 位</strong><span>传承人口述</span></li>
+          <li><strong>响应式</strong><span>移动端适配</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="reports" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="sec-num">01 — ARCHIVE</span>
+          <h2>调研报告</h2>
+          <p>摘要速览与完整 PDF 下载，便于存档与二次研究。</p>
+        </header>
+        <div class="grid-2">
+          <article class="card reveal">
+            <h3>铜运古道非遗调研报告（摘要）</h3>
+            <p>本项目以「文化遗产的流动性」为理论视角，以云南省曲靖市会泽县铜运古道为研究对象，通过 8 天田野调查，对云峰段、石匠房段等古道遗存及斑铜制作技艺、洞经音乐、会泽海腔等非物质文化遗产进行系统考察。采用文本细读、半结构化访谈、参与式观察及数字样本采集等方法，试图回答：铜运古道如何承载和促成了沿线非遗的生成与传播？非遗又如何赋予古道以文化意义？</p>
+            <p>研究发现，古道通过原料流通、技术传播、人群迁徙三条路径塑造了沿线非遗形态与内涵；同时，非遗通过口述记忆和技艺传承不断「活化」古道，使其成为「流动的遗产」。调研形成了古道遗存观察记录、口述史逐字稿、影像档案及分类索引等基础资料，可为地方文化部门及相关研究者提供参考。</p>
+            <p class="meta">关键词：铜运古道 · 文化遗产流动性 · 会泽 · 非物质文化遗产 · 文化线路</p>
+            <a class="btn btn-primary" href="pages/report.html">查看报告详情</a>
+          </article>
+          <article class="card card-download reveal">
+            <h3>完整报告下载</h3>
+            <p>报告终稿已归档，支持长期下载与离线存档。</p>
+            <a class="btn btn-primary" href="assets/pdf/调研报告-完整版.pdf" download>下载完整 PDF</a>
+            <div class="search-box">
+              <label for="report-search">报告内检索（页面摘要）</label>
+              <input id="report-search" type="search" placeholder="输入关键词，如：会馆、传承人…" />
+              <p id="report-search-result" class="search-result" aria-live="polite"></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="oral" class="section section-alt">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="sec-num">02 — VOICE</span>
+          <h2>传承人口述史</h2>
+          <p>五位传承人的非遗故事。点击照片，阅读访谈全文。</p>
+        </header>
+        <div class="oral-grid" id="oral-list"></div>
+      </div>
+    </section>
+
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox-close" aria-label="关闭">×</button>
+      <img id="lightbox-img" alt="" />
+      <p id="lightbox-caption"></p>
+    </div>
+
+    <section id="videos" class="section section-alt">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="sec-num">04 — FILM</span>
+          <h2>实践纪录片</h2>
+          <p>完整记录铜运古道非遗调研的田野历程。</p>
+        </header>
+        <div id="video-list"></div>
+      </div>
+    </section>
+
+    <section id="library" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="sec-num">05 — LIBRARY</span>
+          <h2>影像资料库</h2>
+          <p>按类别检索全部影像编号目录。</p>
+        </header>
+        <a class="card library-entry reveal" href="pages/library.html">
+          <h3>“铜运寻踪”影像资料库</h3>
+          <p>古道、非遗、会馆三大类 · 图片与视频编号目录 · 支持分类与搜索。</p>
+          <span class="oral-more">进入资料库 →</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>铜运古道非遗文化数字化展示平台</strong>
+        <p>项目结束后可移交会泽县文化馆，或提供独立访问链接长期维护。</p>
+      </div>
+      <div class="footer-links">
+        <a href="docs/网络维护手册.md">网络维护手册</a>
+        <a href="#reports">报告下载</a>
+        <a href="#videos">影像纪实</a>
+      </div>
+      <p class="copyright">静态站点 · 无后端依赖 · 便于归档移交</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# 大视频不入库（521MB，超 Gitee/GitHub 限制），改传 B 站嵌入或另存
+assets/video/documentary.mp4
+
+# 系统文件
+.DS_Store
+Thumbs.db
+*~
+*.tmp
+
+# 本地服务器
+__pycache__/
