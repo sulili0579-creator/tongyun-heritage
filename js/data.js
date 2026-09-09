@@ -25,11 +25,10 @@ window.SITE_DATA = {
   `,
 
   /**
-   * 非遗传承人口述史（主页卡片 + 点击进详情页）
-   * img:       主页卡片照片（放 assets/images/oral/）
-   * href:      点击跳转的详情页（pages/*.html）
-   * desc:      主页卡片下方简介（一句话）
-   * 详情页的访谈 PDF 在 assets/pdf/ 下，命名见各页面
+   * 非遗传承人口述史（主页名册 + 点击进 oral.html?id=xxx 详情页）
+   * img:  主页照片（放 assets/images/oral/）
+   * desc: 一句话简介
+   * 详情页访谈 PDF 在 assets/pdf/ 下，文件名映射见 js/main.js 的 ORAL_PDFS
    */
   oralPeople: [
     {
@@ -37,45 +36,40 @@ window.SITE_DATA = {
       name: "张伟",
       role: "张氏斑铜传承人",
       tag: "斑铜制作技艺",
-      desc: "张氏斑铜制作技艺传承人，坚守传统工艺数十年……",
-      img: "assets/images/oral/zhangwei.jpg",
-      href: "pages/oral-zhangwei.html"
+      desc: "张氏斑铜制作技艺传承人，坚守传统工艺数十年。",
+      img: "assets/images/oral/zhangwei.jpg"
     },
     {
       id: "kang",
       name: "康贵友 · 康勇",
       role: "德康斑铜传承人",
       tag: "斑铜制作技艺",
-      desc: "德康斑铜传承人康贵友、康勇，深耕铜艺工序……",
-      img: "assets/images/oral/kang.jpg",
-      href: "pages/oral-kang.html"
+      desc: "德康斑铜传承人康贵友、康勇，深耕铜艺工序。",
+      img: "assets/images/oral/kang.jpg"
     },
     {
       id: "zhaokangping",
       name: "赵康平",
       role: "洞经音乐团副团长",
       tag: "洞经音乐",
-      desc: "洞经音乐团副团长，推动地方洞经音乐传承……",
-      img: "assets/images/oral/zhaokangping.jpg",
-      href: "pages/oral-zhaokangping.html"
+      desc: "洞经音乐团副团长，推动地方洞经音乐传承。",
+      img: "assets/images/oral/zhaokangping.jpg"
     },
     {
       id: "jinyinhuan",
       name: "金银焕",
       role: "海腔音乐传承人",
       tag: "会泽海腔",
-      desc: "会泽海腔音乐传承人，传唱乡土之声……",
-      img: "assets/images/oral/jinyinhuan.jpg",
-      href: "pages/oral-jinyinhuan.html"
+      desc: "会泽海腔音乐传承人，传唱乡土之声。",
+      img: "assets/images/oral/jinyinhuan.jpg"
     },
     {
       id: "chenzhaocai",
       name: "陈兆彩",
       role: "白雾村“活字典”",
       tag: "云峰古道 · 白雾村",
-      desc: "云峰古道白雾村的“活字典”，熟悉古道村落掌故……",
-      img: "assets/images/oral/chenzhaocai.jpg",
-      href: "pages/oral-chenzhaocai.html"
+      desc: "云峰古道白雾村的“活字典”，熟悉古道村落掌故。",
+      img: "assets/images/oral/chenzhaocai.jpg"
     }
   ],
 
@@ -86,8 +80,7 @@ window.SITE_DATA = {
       desc: "完整记录铜运古道非遗调研的田野历程，包含古道踏勘、非遗考察与传承人访谈。",
       poster: "assets/images/video-poster.jpg",  // 封面图（B 站封面）
       type: "bilibili",              // B 站嵌入播放
-      bvid: "BV1ZxYW6EErH",
-      href: "pages/video-documentary.html"
+      bvid: "BV1ZxYW6EErH"
     }
   ]
 };

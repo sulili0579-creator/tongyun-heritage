@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="铜运古道非遗传承人口述史——访谈全文在线阅读与下载" />
+  <title>口述史 | 铜运古道非遗文化 · 数字档案</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;900&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-sub">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-zh">铜运<i>古道</i></span>
+        <span class="brand-sub">TONGYUN HERITAGE</span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="index.html#report">调研报告</a>
+        <a href="index.html#oral">口述史</a>
+        <a href="index.html#film">影像纪实</a>
+        <a href="library.html">资料库</a>
+      </nav>
+      <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="menu">☰</button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu">
+    <a href="index.html#report"><span class="menu-no">01</span>调研报告</a>
+    <a href="index.html#oral"><span class="menu-no">02</span>口述史</a>
+    <a href="index.html#film"><span class="menu-no">03</span>影像纪实</a>
+    <a href="library.html"><span class="menu-no">04</span>资料库</a>
+  </div>
+
+  <main id="main" data-page="oral">
+    <section class="page-hero">
+      <div class="container">
+        <p class="crumb mono"><a href="index.html">首页</a> / <a href="index.html#oral">口述史</a> / <span class="crumb-name"></span></p>
+        <div class="oral-head">
+          <div>
+            <h1 class="page-title" id="oral-name"></h1>
+            <div class="oral-meta-row">
+              <span class="tag mono" id="oral-tag"></span>
+              <span class="hint" id="oral-role"></span>
+            </div>
+            <p class="page-lead" id="oral-desc" style="margin-top:14px"></p>
+          </div>
+          <figure class="oral-head-photo">
+            <img id="oral-photo" alt="" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="container">
+        <div class="oral-docs" id="oral-docs"></div>
+        <div class="reader-head">
+          <h2 id="oral-doc-title">访谈全文</h2>
+          <div class="reader-actions">
+            <a class="btn btn-solid" id="oral-download" href="#" download>下载 PDF</a>
+            <a class="btn" href="index.html#oral">← 返回口述史</a>
+          </div>
+        </div>
+        <iframe class="pdf-frame" id="oral-frame" title="访谈全文" loading="lazy">
+          您的浏览器不支持 PDF 内嵌预览，请点击「下载 PDF」查看。
+        </iframe>
+        <p class="hint mono">若浏览器不支持内嵌预览，请使用「下载 PDF」。逐字稿原件随项目移交文化馆存档。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">铜运<i>古道</i> · 非遗</p>
+          <p>项目结束后可移交会泽县文化馆，或提供独立访问链接长期维护。</p>
+        </div>
+        <div class="footer-links">
+          <a href="docs/网络维护手册.md">网络维护手册</a>
+          <a href="assets/pdf/调研报告-完整版.pdf" download>调研报告 PDF</a>
+          <a href="library.html">影像资料库</a>
+        </div>
+        <p class="footer-note mono">静态站点<br />无后端依赖<br />便于归档移交</p>
+      </div>
+      <div class="footer-base mono">
+        <span>铜运古道非遗文化数字化展示平台</span>
+        <span>TONGYUN HERITAGE · REDESIGN V2</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
