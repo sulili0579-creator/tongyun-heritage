@@ -368,7 +368,6 @@
     var ph = $("#oral-photo");
     ph.src = A(o.img);
     ph.alt = o.name || "";
-    $("#oral-download-page").href = "index.html#oral";
 
     var pdfs = ORAL_PDFS[o.id] || [];
     var frame = $("#oral-frame");
